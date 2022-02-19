@@ -8,7 +8,7 @@ header {
   background-color: #e2e9f7;
   nav {
     width: 220px;
-    height: 100vh;
+    height: 100%;
     background-color: #0d74f5;
     color: #fff;
     position: fixed;
@@ -26,16 +26,14 @@ header {
     }
 
     ul {
+      position: fixed;
       list-style-type: none;
       padding-left: 0px;
-      /* alignment with flexbox */
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
 
       li {
         padding: 10px 0;
-        // margin: 5px 0;
+        margin: 5px 0;
+        transition: 0.5s ease;
 
         a {
           color: #fff;
@@ -57,13 +55,9 @@ header {
           a {
             color: #0d74f5;
           }
+          padding: 11px 10px 6px 10px;
+          margin: 5px 0 5px 10px;
           border-radius: 6px;
-          // alignment on hover with flexbox
-          display: flex;
-          gap: 20px;
-          align-items: center;
-          justify-content: center;
-          transition: 0.5s ease;
         }
       }
     }
